@@ -1,5 +1,7 @@
 import pandas as pd
 from dataset import df
+import streamlit as st
+import time
 
 
 def format_number(value, prefix=''):
@@ -28,3 +30,14 @@ df_receita_categoria = df.groupby('Categoria do Produto')[
 
 df_vendedores = pd.DataFrame(df.groupby(
     'Vendedor')['Preço'].agg(['sum', 'count']))
+
+
+@st.cache_data
+def convert_csv(df):
+    return df.to_csv(index=False).encode('utf-8')
+
+
+def mensagem_sucesso():
+    success = st.success('Arquivo baixado com sucesso!')
+    time.sleep(3)
+    success.empty()
