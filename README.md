@@ -2,6 +2,8 @@
 
 Um dashboard interativo desenvolvido em Python utilizando a biblioteca **Streamlit** para visualização e análise de dados de vendas.
 
+-->  https://meudashboarddevendas.streamlit.app/ <--
+
 ---
 
 ## 📌 Sobre o Projeto
