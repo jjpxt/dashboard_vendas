@@ -17,7 +17,7 @@ Este projeto consiste em uma aplicação web interativa para acompanhamento de m
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Python 3.10+**
+- **Python 3.11**
 - **Streamlit** (para construção da interface de usuário)
 - **Pandas** (para manipulação e tratamento de dados)
 - **Plotly** (para geração dos gráficos interativos)
